@@ -1,0 +1,14 @@
+<%= form_tag lookup_path, method: :post do %>
+<div class="form-group">
+  <div class="input-group">
+    <div class="input-group-addon"><span class="glyphicon glyphicon-education" aria-hidden="true"></span></div>
+    <%= text_field_tag :input, params[:input], placeholder: "Coincard, Middle Finger, ...",
+        class: "form-control", autofocus: true, required: true %>
+    <span class="input-group-btn">
+    <%= button_tag(type: "submit", class: "btn btn-primary btn-md") do %>
+      <span><i class="glyphicon glyphicon-search"></i> search</span>
+    <% end %> 
+    </span>
+  </div>
+</div>
+<% end %>

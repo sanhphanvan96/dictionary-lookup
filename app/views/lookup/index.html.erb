@@ -1,23 +1,11 @@
-	<div id="lookup">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h1 class="text-center">What Is Your Lookup ?</h1>
-
-					<form action="ajax.php" method="POST" role="form" id="form">
-						<div class="form-group">
-							<label for="email" class="sr-only">Word</label>
-							<div class="input-group">
-								<div class="input-group-addon"><span class="glyphicon glyphicon-education" aria-hidden="true"></span></div>
-								<input type="email" class="form-control" id="email" name="email" placeholder="Coincard, Middle Finger, ..." autofocus required>
-								<span class="input-group-btn">
-									<button type="submit" class="btn btn-primary" id="submitBtn" data-loading-text="Loading..."><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
-								</span>
-							</div>
-						</div>
-					</form>
-
-				</div>
+<div id="lookup">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 class="text-center">What Is Your Lookup ?</h1>
+				<!-- search form here -->
+				<%= render "search-form" %>
+				<!-- /search form here -->
 			</div>
 		</div>
 	</div>

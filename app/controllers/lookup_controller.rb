@@ -1,7 +1,10 @@
 class LookupController < ApplicationController
 
 	def index
-		#render plain: "OK"
 	end
 
+  def show
+    render :layout => false
+    # binding.pry
+  end
 end
